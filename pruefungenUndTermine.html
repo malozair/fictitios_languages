@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="assets/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Termine</title>
+</head>
+
+<body>
+
+  <!--Navbar--><!--Quelle: https://getbootstrap.com/docs/5.3/components/navbar/-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark w-auto h-200 fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand px-3" href="index.html">
+        <img class="" src="IMG/logo.svg" alt="logo" width="50"> Fantasylingo
+      </a> <!--https://www.svgrepo.com/svg/184166/colosseum-rome-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="  px-3 nav-link me-3" href="index.html">Startseite</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="  px-3 nav-link disabled" href="pruefungenUndTermine.html">Prüfungen und Termine</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class=" px-3 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Kurse
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fs-5" href="navi.html">Na'vi</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item fs-5" href="klingonisch.html">Klingonisch</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item fs-5" href="sindarin.html">Sindarin</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3">
+            <a class="px-3 nav-link" href="index.html#fragen">Fragen</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="px-3 nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!--Header-->
+  <section class="bg-dark text-light p-5 text-center text-md-start">
+    <div class="container">
+      <div class="align-items-center">
+        <div>
+          <h1 class="text-warning text-center">Prüfungen und Termine</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Termintabelle : https://getbootstrap.com/docs/5.3/content/tables/-->
+  <!--tutorial: https://www.youtube.com/watch?v=czZ1PvNW5hk 
+  https://www.youtube.com/watch?v=OtBpgtqrjyo-->
+
+  <section class="p-5 mt-5">
+    <h2 class="text-center mb-2 fw-bold">Kurse (Anfänger)</h2>
+    <hr>
+    <table class="table table-success table-striped fs-4 table-rounded ">
+     
+      <thead>
+        <tr>
+          <th scope="col ">Kurs</th>
+          <th scope="col">Niveau</th>
+          <th scope="col">Lehrer/-in</th>
+          <th scope="col">Kursbeginn</th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <tr>
+          <td data-cell="Kurs" scope="row">Na'vi</td>  <!--Data-cell nutzlich fuer gute Empfänglichkeit-->
+          <td data-cell="Niveau">Anfänger</td>
+          <td data-cell="Lehrer">W. Crawford</td>
+          <td data-cell="kursbeginn">02.03.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Klingonisch</td>
+          <td data-cell="Niveau">Anfänger</td>
+          <td data-cell="Lehrer">M. Stewart</td>
+          <td data-cell="kursbeginn">02.03.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Sindarin</td>
+          <td data-cell="Niveau">Anfänger</td>
+          <td data-cell="Lehrer">C. Kamp</td>
+          <td data-cell="kursbeginn">02.03.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Na'vi</td>
+          <td data-cell="Niveau">Anfänger</td>
+          <td data-cell="Lehrer">A. Bishop</td>
+          <td data-cell="kursbeginn">04.05.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Klingonisch</td>
+          <td data-cell="Niveau">Anfänger</td>
+          <td data-cell="Lehrer">J. Zimmermann</td>
+          <td data-cell="kursbeginn">04.05.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Sindarin</td>
+          <td data-cell="Niveau">Anfänger</td>
+          <td data-cell="Lehrer">V. Matthews</td>
+          <td data-cell="kursbeginn">04.05.2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="p-5 mt-5">
+    <h2 class="text-center mb-2 fw-bold">Kurse (Fortgeschritten)</h2>
+    <hr>
+    <table class="table table-success table-striped fs-4 table-rounded ">
+     
+      <thead>
+        <tr>
+          <th scope="col ">Kurs</th>
+          <th scope="col">Niveau</th>
+          <th scope="col">Lehrer/-in</th>
+          <th scope="col">Kursbeginn</th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <tr>
+          <td data-cell="Kurs" scope="row">Na'vi</td> 
+          <td data-cell="Niveau">Fortgeschritten</td>
+          <td data-cell="Lehrer">A. Bishop</td>
+          <td data-cell="kursbeginn">02.03.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Klingonisch</td>
+          <td data-cell="Niveau">Fortgeschritten</td>
+          <td data-cell="Lehrer">J. Zimmermann</td>
+          <td data-cell="kursbeginn">02.03.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Sindarin</td>
+          <td data-cell="Niveau">Fortgeschritten</td>
+          <td data-cell="Lehrer">V. Matthews</td>
+          <td data-cell="kursbeginn">02.03.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Na'vi</td>
+          <td data-cell="Niveau">Fortgeschritten</td>
+          <td data-cell="Lehrer">W. Crawford</td>
+          <td data-cell="kursbeginn">04.05.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Klingonisch</td>
+          <td data-cell="Niveau">Fortgeschritten</td>
+          <td data-cell="Lehrer">M. Stewart</td>
+          <td data-cell="kursbeginn">04.05.2024</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Sindarin</td>
+          <td data-cell="Niveau">Fortgeschritten</td>
+          <td data-cell="Lehrer">C. Kamp</td>
+          <td data-cell="kursbeginn">04.05.2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+<!--Pruefungen-->
+  <section class="p-5 mt-5">
+    <h2 class="text-center mb-2 fw-bold">Prüfungen</h2>
+    <hr>
+    <table class="table table-success table-striped fs-4 table-rounded ">
+     
+      <thead>
+        <tr>
+          <th scope="col ">Sprache</th>
+          <th scope="col">Art</th>
+          <th scope="col">Prüfer/-in </th>
+          <th scope="col">Prüfungsstart</th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <tr>
+          <td data-cell="Kurs" scope="row">Na'vi</td> 
+          <td data-cell="Niveau">Schriftlich</td>
+          <td data-cell="Lehrer">A. Bishop</td>
+          <td data-cell="kursbeginn">02.05.2024 um 10:00</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Na'vi</td>
+          <td data-cell="Niveau">Mündlich</td>
+          <td data-cell="Lehrer">J. Zimmermann</td>
+          <td data-cell="kursbeginn">03.05.2024 um 10:00</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Klingonisch</td>
+          <td data-cell="Niveau">Schriftlich</td>
+          <td data-cell="Lehrer">V. Matthews</td>
+          <td data-cell="kursbeginn">02.05.2024 um 10:00</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Klingonisch</td>
+          <td data-cell="Niveau">Mündlich</td>
+          <td data-cell="Lehrer">W. Crawford</td>
+          <td data-cell="kursbeginn">03.05.2024 um 10:00</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Sindarin</td>
+          <td data-cell="Niveau">Schriftlich</td>
+          <td data-cell="Lehrer">M. Stewart</td>
+          <td data-cell="kursbeginn">02.05.2024 um 10:00</td>
+        </tr>
+        <tr>
+          <td data-cell="Kurs" scope="row">Sindarin</td>
+          <td data-cell="Niveau">Mündlich</td>
+          <td data-cell="Lehrer">C. Kamp</td>
+          <td data-cell="kursbeginn">03.05.2024 um 10:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+
+
+  <!--Footer-->
+  <!--grid: https://getbootstrap.com/docs/5.3/layout/grid/-->
+  <footer class="p-5 bg-secondary text-light">
+    <div class="container">
+      <div class="row align-items-stretch text-center text-md-start">
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-4 text-warning">Fantasylingo</h5>
+          <hr class="mb-2 p-2">
+          <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur laudantium dicta
+            laboriosam libero fugit veritatis.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-4">Links</h5>
+          <hr class="mb-2 p-2">
+          <a href="impressum.html" class="text-light text-decoration-none d-block mb-2 linked">Impressum</a>
+          <a href="impressum.html" class="text-light text-decoration-none d-block mb-2 linked">Hilfe</a>
+          <a href="Datenschutz.html" class="text-light  text-decoration-none d-block mb-2 linked">Datenschutz</a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-4">Kontakt</h5>
+          <hr class="mb-2 p-2">
+          <p class="text-light d-block"><i class="bi bi-house"></i> Clausthal, Bernstr. 00</p>
+          <p class="text-light d-block"><i class="bi bi-telephone"></i> +10 1234 123</p>
+          <p class="text-light d-block"><i class="bi bi-envelope"></i> roland@fantasy.de</p>
+        </div>
+      </div>
+      <hr class="mb-2">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="text-md-start text-center"> Copyright &copy; 2023 </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="text-md-end text-center">
+            <a href=""><i class="bi bi-facebook fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-twitter fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-instagram fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-discord fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-youtube fs-3 text-white mx-3"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+          <i class="bi bi-arrow-up fs-3"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+<!--Das sind ein Paar tutorials, die mir viel geholfen haben:
+https://www.youtube.com/watch?v=EKSPK_Zk9X8
+-->
+
+</html>

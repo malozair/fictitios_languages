@@ -1,0 +1,331 @@
+:root { /* die habe ich nur hier als reference geschrieben sicher gestellt vom https://paletton.com */
+    --primary-bg-color: #E1D3F0;
+    --primary-nav-color: #6B5B95;
+    --secondary-bg-color: #443B63;
+    --secondary-light-color: #C4DFAD;
+    --accent-and-secondary: #FFB600;
+    --accent-color-2: #BB5580;
+  }
+
+
+
+
+@media(min-width: 820px) {  /*breakpoint fuer medium >= 768  Quelle: https://getbootstrap.com/docs/5.3/layout/breakpoints/*/
+    .abb-input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+   th{
+    display:none;
+   }
+   td{
+    display: block;
+   }
+   td::before{
+    content:attr(data-cell) ": ";
+    font-weight:700;
+   }
+   
+   .align-items-center.text-light.justify-content-between {
+    flex-direction: column;
+  }
+
+  
+  .btn-with-gap{
+    margin-top: 20px !important;
+  }
+
+    
+}
+
+@media (max-width: 992px) {
+    .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .col-md-7 {
+        order: 2;
+      }
+  
+      .col-md-5 {
+        order: 1;
+      }
+  }
+
+@media (min-width: 992px) {
+    .btn.btn-sm {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    .carousel-img{
+        height: 90% !important;
+        width: 90% !important;
+    }
+    .container2{
+        width:800px;
+    }
+}
+
+
+.bi-facebook:hover,
+.bi-twitter:hover,
+.bi-discord:hover,
+.bi-youtube:hover,
+.bi-instagram:hover {
+    color: #ffb600 !important;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.carousel-img {
+    margin: 0 auto;
+    border: solid 3px #443B63  ;
+}
+
+.carousel-item {
+    border-radius: 15px;
+
+}
+
+.img {
+    width: 20%;
+}
+
+.disabled {
+    color: #ffb600 !important;
+}
+
+.navbar-brand {
+    color: #ffb600 !important;
+}
+.btns{
+    border:none;
+}
+.btns:hover {
+    background-color: #ffb600;
+    color: white !important;
+    border: none;
+}
+
+input.form-control,
+textarea.form-control {
+    border-radius: 20px;
+    outline: solid 7px #c4dfad  ;
+}
+
+input.news-form {
+    outline: transparent;
+}
+
+.dropdown-menu {
+    background: #e1d3f0;
+}
+
+body {
+    background-color: #e1d3f0;
+}
+
+.bg-warning {
+    background-color: #c4dfad !important;
+}
+
+.text-warning {
+    color: #ffb600 !important;
+}
+
+.bg-dark {
+    background-color: #6B5B95 !important;
+
+}
+
+.bg-secondary {
+    background-color: #443B63 !important;
+}
+
+.accordion {
+    background-color: #e1d3f0 !important;
+}
+
+.btn-outline {
+
+    background-color: #6B5B95;
+    outline: white !important;
+}
+
+.btn-outline-secondary:hover {
+    color: white;
+    background: #ffb600;
+}
+
+
+.accordion-button {
+    color: black;
+    background: #e1d3f0;
+}
+
+.dropdown-item:hover {
+    background: #d1c0e4 !important;
+}
+
+.accordion-item {
+    background: white;
+    color: black;
+
+}
+
+.navbar-toggler {
+    background: #443B63;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #6B5B95 !important;
+}
+
+.linked {
+    text-decoration: none;
+}
+
+.linked:hover {
+    color: #ffb600 !important;
+}
+
+.btn-news {
+    background: #BB5580 !important;
+    border: none;
+    border-top-right-radius:20px ;
+    border-end-end-radius: 20px;
+}
+.btn-news:hover{
+   border: none;
+   background: #9c4469 !important;
+}
+
+.aclick:active {
+    color: #ffb600;
+}
+
+.img1 {
+    border-radius: 30px;
+    border: solid #c4dfad  ;
+}
+.btnPreis{
+    background: black !important;
+
+}
+.btnPreis:hover{
+    background:  white !important;
+    color: black !important;
+}
+.bg-light{
+    background-color: #e1d3f0 !important;
+}
+
+.icon-large {
+    font-size: 4rem !important;
+    color:#ffb600;
+  }
+ 
+.progress{
+    height:10px;
+    width: 100%;
+  }
+.progress-bar{
+    background: #ffb600;
+}
+.btn-primary{
+    background: #BB5580;
+}
+.btn-primary:hover{
+    background: #9c4469;
+}
+.bg-success{
+    background: #BB5580 !important;
+}
+.crd{
+    border: solid 3px #6B5B95;
+}
+.person-img1{
+    border:solid 5px #6B5B95;
+}
+
+
+.table-succes{
+    background: #6B5B95 !important;
+    color: #443B63 !important;
+}
+
+.card-kontakt{
+    background: #eae8f1;
+    border-radius: 15px;
+}
+
+td{
+    background: #dbe7d0 !important;
+}
+th {
+    background: #443B63  !important;
+    color: white !important;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+td,th{
+    padding: 2rem !important;
+}
+.table-rounded{
+    border-radius: 30px;
+    overflow: hidden;
+    border: solid 1px #443B63;
+}
+.meow{
+    border: solid 1px #443B63 !important;
+}
+
+.borderd{
+    border: solid 1px #443B63 !important;
+}
+
+body {
+    font-family: 'copperplate' !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 ,.navbar-brand {
+    font-family:'Papyrus' !important;
+    font-weight: 700;
+  }
+  body {
+    font-size: 20px !important;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 20px !important;
+  }
+
+  .navbar , .navbar-brand{
+    font-size: 23px !important;
+  }
+ 
+  
+

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="assets/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Startseite</title>
+</head>
+
+<body>
+
+  <!--Navbar--><!--Quelle: https://getbootstrap.com/docs/5.3/components/navbar/-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark w-auto h-200 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand px-3" href="#">
+        <img class="" src="IMG/logo.svg" alt="logo" width="50"> Fantasylingo
+      </a> <!--https://www.svgrepo.com/svg/184166/colosseum-rome-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="  px-3 nav-link me-3 disabled" href="#">Startseite</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="  px-3 nav-link" href="pruefungenUndTermine.html">Prüfungen und Termine</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class=" px-3 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Kurse
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fs-5" href="navi.html">Na'vi</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item fs-5" href="klingonisch.html">Klingonisch</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item fs-5" href="sindarin.html">Sindarin</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3">
+            <a class="px-3 nav-link" href="index.html#fragen">Fragen</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="px-3 nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Heroabschnitt -->
+<section class="bg-dark text-light p-5 text-center text-md-start">
+  <div class="container">
+    <div class="d-lg-flex align-items-center justify-content-between">
+      <div class="text-container col-lg-6 col-md-12 "> 
+        <h1>Begeben Sie sich auf eine <span class="text-warning">sprachliche Reise </span>wie nie zuvor</h1>
+        <p class="lead">Tauche ein in ein aufregendes Sprachabenteuer und entdecke die Geheimnisse von drei faszinierenden fiktiven Sprachen - Na'vi, Klingonisch und Sindarin. Erkunde die futuristische Welt von Pandora, die Schlachtfelder des Klingonischen Reiches und die zauberhaften Reiche von Mittelerde.</p>
+        <a href="#learn" class="mt-3 btn btn-light btn-lg btns text-dark">erfahre mehr</a>
+      </div>
+      <img class="img-fluid w-50 d-none d-lg-block" src="img/buch.png" alt="HeroAbschnittFoto">
+      <!--Foto Quelle: https://www.flaticon.com/de/kostenloses-icon/buch_11465871-->
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!--why learn fictional languages-->
+  <section id="cards" id="learn" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md  d-none d-lg-block">
+          <img class="img w-100 " src="IMG/warumfs.svg">
+        </div>
+        <!--Foto Quelle: https://iconscout.com/illustration/subscribe-2103909 -->
+        <div class="col-md p-5">
+          <h2>Warum learnt man fiktionale Sprachen?</h2>
+          <p class="lead">Entdecke neue Bereiche, tauche ein in jenseitige Kulturen und lüfte die
+            Geheimnisse bezaubernder Sprachen. Begleite uns auf diesem außergewöhnlichen Abenteuer! Klicke
+            unten, um unsere Kurse zu erkunden.</p>
+          <a href="#cards" class="btn btns btn-light btn-lg btn-lg mt-3">
+            zu den Kursen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Kurse cards-->
+  <!--grid: https://getbootstrap.com/docs/5.3/layout/grid/-->
+  <!--Quelle: https://getbootstrap.com/docs/5.3/components/card/ -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row text-center g-4">
+
+        <!--card 1-->
+        <div class="col-lg-4 col-md-12">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1">
+                <img class="img-fluid img" src="IMG/Avatar.svg">
+                <!--Fotoquelle: https://visualpharm.com/assets/684/Avatar-595b40b65ba036ed117d28e9.svg-->
+              </div>
+              <h2 class="card-title mb-3">Na'vi</h2>
+              <p class="card-text">
+                Entdecke die Geheimnisse von Na'vi, der mystischen Sprache von Pandora.
+              </p>
+              <a href="navi.html" class="btn btn-light btns text-dark">erfahre mehr</a>
+            </div>
+          </div>
+        </div>
+
+        <!--card 2-->
+        <div class="col-lg-4 col-md-12">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1">
+                <img class="img-fluid img " src="IMG/Klingon.png">
+                <!--Fotoquelle: https://imgbin.com/png/L1GCewwU/computer-icons-klingon-png-->
+              </div>
+              <h2 class="card-title mb-3">Klingonisch</h2>
+              <p class="card-text">
+                Erobere das Universum mit der Macht der wilden Sprache der Krieger.
+              </p>
+              <a href="klingonisch.html" class="btn btn-light btns text-dark">erfahre mehr</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Card 3-->
+        <div class="col-lg-4 col-md-12">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1">
+                <img class="img-fluid img" src="IMG/elf.png">
+                <!--Fotoquelle: https://www.flaticon.com/free-icon/elf_3819566?term=elf&related_id=3819566-->
+              </div>
+              <h2 class="card-title mb-3">Sindarin</h2>
+              <p class="card-text">
+                Entdecke die bezaubernden Melodien von der Sprache der Elfen.
+              </p>
+              <a href="sindarin.html" class="btn btn-light btns text-dark">erfahre mehr</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!--Warum uns?-->
+  <section id="learn" class="p-5 bg-dark">
+    <div class="container">
+      <div class="row align-items-center text-light justify-content-between">
+        <div class="col-md-6 p-5">
+          <h2>Warum bist du bei uns richtig?</h2>
+          <p class="lead">Unsere erfahrenen Lehrer und intensiven Kurse werden deine Leidenschaft für diese
+            außergewöhnlichen Sprachen entfachen. Klicke unten, um die Kurspläne zu entdecken.</p>
+          <a href="pruefungenUndTermine.html" class="btn btn-light btn-lg btns mt-3">
+          zu den Kurspläne
+          </a>
+        </div>
+        <div class="col-md-6">
+          <img class="img w-100 " src="IMG/learnOnline.png">
+          <!--Foto Quelle: https://pixabay.com/de/illustrations/online-unterrichten-sch%C3%BCler-kunde-5368573/-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Frequently asked questions-->
+  <section id="fragen" class="p-5">
+    <h2 class="text-center mb-4">Häufig gestellte Fragen</h2>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Wie melde ich mich an?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Die Anmeldung ist ganz einfach! Wähle aus unserem Angebot deinen Wunschkurs
+            aus und klicke auf „Jetzt anmelden“. Hast du Fragen oder benötigst du weitere Informationen? Kontaktiere
+            uns gerne über das <a class="text-primary link" href="kontakt.html">Kontaktformular</a>, wir helfen dir
+            gerne weiter!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Wie viel kosten die Kurse?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Entdecke unsere vielfältige Kurs- und Preisangebote für <a
+              class="text-primary link" href="navi.html#preise">Na'vi</a>, <a class="text-primary link"
+              href="klingonisch.html#preise1">Klingonisch</a> und <a class="text-primary link"
+              href="sindarin.html#preise2">Sindarin</a>.
+            Wir bieten flexible Optionen, die deinen Vorlieben und deinem Budget entsprechen.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Was muss ich mitbringen?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Alles, was du brauchst, ist ein kompatibles Gerät mit Kamera und Mikrofon, eine
+            stabile Internetverbindung und eine gute Laune. Wir kümmern uns um den Rest!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--newsletter-->
+  <!--Quelle:https://getbootstrap.com/docs/5.3/forms/input-group/-->
+  <section class="bg-warning text-dark p-5 newsletter">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md 0">Abonniere unseren Newsletter</h3>
+        <div class="input-group abb-input">
+          <input type="text" class="form-control news-form" placeholder="Email eingeben">
+          <button class="btn btn-dark btn-lg btn-rounded border-0 btn-news" type="submit"
+            value="button-addon2">abbonieren</button>
+        </div>
+  </section>
+
+
+
+  <!--Footer-->
+  <!--grid: https://getbootstrap.com/docs/5.3/layout/grid/-->
+  <footer class="p-5 bg-secondary text-light">
+    <div class="container">
+      <div class="row align-items-stretch text-center text-md-start">
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-4 text-warning">Fantasylingo</h5>
+          <hr class="mb-2 p-2">
+          <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur laudantium dicta
+            laboriosam libero fugit veritatis.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-4">Links</h5>
+          <hr class="mb-2 p-2">
+          <a href="impressum.html" class="text-light text-decoration-none d-block mb-2 linked">Impressum</a>
+          <a href="impressum.html" class="text-light text-decoration-none d-block mb-2 linked">Hilfe</a>
+          <a href="Datenschutz.html" class="text-light  text-decoration-none d-block mb-2 linked">Datenschutz</a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-4">Kontakt</h5>
+          <hr class="mb-2 p-2">
+          <p class="text-light d-block"><i class="bi bi-house"></i> Clausthal, Bernstr. 00</p>
+          <p class="text-light d-block"><i class="bi bi-telephone"></i> +10 1234 123</p>
+          <p class="text-light d-block"><i class="bi bi-envelope"></i> roland@fantasy.de</p>
+        </div>
+      </div>
+      <hr class="mb-2">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="text-md-start text-center"> Copyright &copy; 2023 </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="text-md-end text-center">
+            <a href=""><i class="bi bi-facebook fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-twitter fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-instagram fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-discord fs-3 text-white mx-3"></i></a>
+            <a href=""><i class="bi bi-youtube fs-3 text-white mx-3"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+          <i class="bi bi-arrow-up fs-3"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+<!--Das sind ein Paar tutorials, die mir viel geholfen haben:
+https://www.youtube.com/watch?v=v0IgI8vYD_o
+https://www.youtube.com/watch?v=-qfEOE4vtxE&t=1286s
+https://www.youtube.com/watch?v=4fexoLuGpeI
+-->
+</html>
